@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Dynamics Project</string>
+
+    <string name="question">Please Enter to the required section below to determine the maximum
+        load capacity of the dumper car\'s carriage. And the maximum theta the carriage can be lifted
+        carrying the mass of the given material.
+    </string>
+
+    <string name="graph_conclusion">The graph is plotted dynamically from the user
+    different inputs and number of calculations. The X-axis is for the LOAD in Kg
+    and the Y-axis is for the VOLUME.</string>
+
+
+    <string name="answer_conclusion">\tThe answer is calculated using your inputs from the main
+    page. Note that the maximum lift force capacity of the dumper car standard is 686,700 N. And the
+        standard load capacity of most newer dumper cars is 70 Ton. Therefore depending on the dencity
+        of the load the maximum load mass should not be greater than 70,000 Kg.\n \n
+        In addition, the volume of the material might be higher than the dumpers capacity but should
+        but the mass should not get higher than this the force of the car\'s capacity which is reacted
+        to lift the weight.
+    \n \n
+        For more information please email to : adu.kidus@yahoo.com</string>
+
+    <string name="help_note">The app is made to ease the works of dumper car owners and other study disciplines
+    concerned with the carriage of the dumper car as well as assist students verify the calculations
+    they encounter for such related questions.\n\n
+    The app has also a computer software for using it on your desktops too. Therefore please check
+    our site and feel free to comment and give us your feed back as it helps us on improving the app
+     for your better experience.\n\n</string>
+
+
+    <string name="developer1">*Kidus M.Tekeste \t \t \t  ATR/6157/07</string>
+    <string name="developer2">*Mikael Mandefro \t \t \t  ATR/6157/07</string>
+    <string name="developer3">*Silas Getachew  \t \t \t \t ATR/6157/07</string>
+    <string name="developer4">*Amente Diriba  \t \t \t \t \t  ATR/6157/07</string>
+    <string name="developer5">*Hizkias Abrham  \t \t \t \t ATR/6157/07</string>
+
+    <string name="instructor">Instructor: Andinet Kumella</string>
+    <string name="department">Department: Software Engineering</string>
+    <string name="title">Question</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="date">Submit:Jan 23, 2017</string>
+    <string name="exit">Exit</string>
+    <string name="conclusion">Conclusion</string>
+    <string name="conclusion_note">lorem ibsum</string>
+    <string name="help_title">Help</string>
+    <string name="help_content">lorem ipsum is a helping sentence</string>
+    <string name="about_designer">Designed by:</string>
+
+    <string name="answer_topic">Analytical Answer</string>
+
+    <string name="country_prompt">--Material Type--</string>
+    <string name="requeired">Requeired</string>
+    <string name="given">Given Inputs</string>
+    <string name="material_type">Material Type:</string>
+    <string name="load_volume">Load Mass</string>
+    <string name="lift_force">Lift Force:</string>
+    <string name="lift_time">Lift Time:</string>
+    <string name="calculated_result">Calculated Results</string>
+    <string name="max_lift">Max Lift Angle:</string>
+    <string name="load_unload_result">Load Unloaded:</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="material_type_result">material type results</string>
+    <string name="loadvolumeresults">Load Volume Results</string>
+    <string name="lift_force_lable">Lift result</string>
+    <string-array name="material_types">
+        <item>Sand</item>
+        <item>Wood</item>
+        <item>Metal</item>
+    </string-array>
+
+    <string-array name="volume_amount">
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+    </string-array>
+
+</resources>

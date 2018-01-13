@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="DynamicsProject.UserCtrls.QuestionCtrl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DynamicsProject.UserCtrls"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="500">
+    <Grid>
+        
+
+        <TextBlock x:Name="question" TextAlignment="Center" HorizontalAlignment="Left" Margin="27,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="83" Width="450" FontFamily="Segoe UI Black" FontSize="16" 
+                   Background="White" Text="To start the calculation, Fill you requirements !">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="4" ShadowDepth="3" Color="#FFE66F6F"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <StackPanel HorizontalAlignment="Left" Orientation="Vertical" Height="300" Margin="27,173,0,0" VerticalAlignment="Top" Width="449">
+            <StackPanel Orientation="Horizontal">
+                <Label  Width="180" Foreground="#FFDE2F2F" FontFamily="Segoe UI Black" FontSize="16" Padding="0 15">
+                    Material type :
+                </Label>
+                <ComboBox x:Name="materialtype" DisplayMemberPath="MaterialName" SelectedIndex="0" FontFamily="Segoe UI Black"
+                          FontSize="14" IsEditable="True" Width="230" Height="36" Margin="2"/>
+
+
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <Label  Width="180" Foreground="#FFDE2F2F" FontFamily="Segoe UI Black" FontSize="16" Padding="0 15">
+                    Load Volume ( M^3) :
+                </Label>
+                <TextBox x:Name="volumeBox" BorderBrush="LightGray" BorderThickness="3" Margin="5" Padding="3 5" 
+                         FontSize="14" Width="230" Height="36" FontFamily="Segoe UI Black"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label  Width="180" Foreground="#FFDE2F2F" FontFamily="Segoe UI Black" FontSize="16" Padding="3 9 6 6 " >
+                    Pistle Force ( N ) :
+                </Label>
+                <TextBox x:Name="pistelLevelBox" Text="{Binding PistelLevel, Mode=TwoWay}" BorderBrush="LightGray" BorderThickness="3" Margin="5" Padding="3 5" 
+                         FontSize="14" Width="230" Height="36" FontFamily="Segoe UI Black"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label  Width="180" Foreground="#FFDE2F2F" FontFamily="Segoe UI Black" FontSize="16" Padding="3 9 6 6 ">
+                    Lift Time ( Second ) :
+                </Label>
+                <TextBox x:Name="pushTimeBox" Text="{Binding PushTime, Mode=TwoWay}" BorderBrush="LightGray" BorderThickness="3" Margin="5" Padding="3 5" 
+                         FontSize="14" Width="230" Height="36" FontFamily="Segoe UI Black"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label  Width="180" Foreground="White" FontFamily="Segoe UI Black" FontSize="16"   Padding="3 9 6 6 ">
+                    Lift Time ( Second ) :
+                </Label>
+                <Button  x:Name="submit"  Content="Submit" Click="submit_Click" BorderBrush="DodgerBlue" BorderThickness="2" Margin="5" 
+                         Padding="0" Width="230" Height="36"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

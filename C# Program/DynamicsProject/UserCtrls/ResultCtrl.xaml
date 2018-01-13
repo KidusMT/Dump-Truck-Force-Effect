@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="DynamicsProject.UserCtrls.ResultCtrl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DynamicsProject.UserCtrls"
+             mc:Ignorable="d" Width="800" Height="504.135">
+
+    <Grid Margin="0">
+        <TextBlock x:Name="question" TextAlignment="Center" HorizontalAlignment="Left" Margin="27,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Height="52" Width="450"  FontFamily="Segoe UI Black" FontSize="16" 
+                   Background="White" Text="Analytical Representation">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="4" ShadowDepth="3" Color="#FFE66F6F"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <StackPanel HorizontalAlignment="Left" Orientation="Vertical" Height="362" Margin="27,111,0,0" VerticalAlignment="Top" Width="449">
+            <StackPanel Orientation="Horizontal">
+                <Label  Width="180" Foreground="#FFDE2F2F" FontFamily="Segoe UI Black" FontSize="16" Padding="0 15">
+                    Material type :
+                </Label>
+                <TextBlock x:Name="material_type" Text="{Binding Material}" Padding="3 9 6 6 "  
+                         FontSize="14" Width="230" Height="36" FontFamily="Segoe UI Black"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label  Width="180" Foreground="#FFDE2F2F" FontFamily="Segoe UI Black" FontSize="16" Padding="0 15">
+                    Load Volume ( M^3) :
+                </Label>
+                <TextBlock x:Name="Volume" Text="{Binding Volume, Mode=TwoWay}" Padding="3 9 6 6 " 
+                         FontSize="14" Width="230" Height="36" FontFamily="Segoe UI Black"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label  Width="180" Foreground="#FFDE2F2F" FontFamily="Segoe UI Black" FontSize="16" Padding="3 9 6 6 " >
+                    Pistle Force ( N ) : 
+                </Label>
+                <TextBlock x:Name="PistelLevel" Text="{Binding PistelLevel, Mode=TwoWay}" Margin="5" Padding="3 5" 
+                         FontSize="14" Width="230" Height="36" FontFamily="Segoe UI Black"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label  Width="180" Foreground="#FFDE2F2F" FontFamily="Segoe UI Black" FontSize="16" Padding="3 9 6 6 ">
+                    Lift Time ( Second ) : 
+                </Label>
+                <TextBlock x:Name="PushTime" Text="{Binding PushTime, Mode=TwoWay}" Margin="5" Padding="3 5" 
+                         FontSize="14" Width="230" Height="36" FontFamily="Segoe UI Black"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <StackPanel>
+                    <Label HorizontalAlignment="Center" FontFamily="Minion Pro Med" FontSize="26" Padding="0 15 0 5" Foreground="Green" FontStyle="Italic" FontWeight="Bold">
+                        Calculated Result 
+                    </Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label  Width="180" Foreground="#FFDE2F2F" FontFamily="Segoe UI Black" FontSize="16" Padding="0 15">
+                        Maximum Left( Deg ) :
+                    </Label>
+                    <TextBlock x:Name="reslt1" Text="{Binding AngleOfInclination}" Margin="5" Padding="3 9 6 6 "  
+                         FontSize="14" Width="230" Height="36" FontFamily="Segoe UI Black"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label  Width="180" Foreground="#FFDE2F2F" FontFamily="Segoe UI Black" FontSize="16" Padding="0 15">
+                        Load Unloaded( V^3) :
+                    </Label>
+                    <TextBlock x:Name="reslt2" Text="{Binding LoadUnloaded}" Margin="5" Padding="3 9 6 6 " 
+                         FontSize="14" Width="230" Height="36" FontFamily="Segoe UI Black"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+
+    </Grid>
+</UserControl>
